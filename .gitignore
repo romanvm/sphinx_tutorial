@@ -107,3 +107,4 @@ docs/_build/
 target/
 
 venv/
+*.cmd
