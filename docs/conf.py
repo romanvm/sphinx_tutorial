@@ -44,7 +44,9 @@ extensions = [
 ## Include Python objects as they appear in source files
 ## Default: alphabetically ('alphabetical')
 autodoc_member_order = 'bysource'
+## Default flags used by autodoc directives
 autodoc_default_flags = ['members', 'show-inheritance']
+## Generate autodoc stubs with summaries from code
 autosummary_generate = True
 
 # Add any paths that contain templates here, relative to this directory.
@@ -130,7 +132,13 @@ html_theme = 'alabaster'
 # further.  For a list of options available for each theme, see the
 # documentation.
 ## alabater theme opitons
-html_theme_options = {'github_button': False}
+html_theme_options = {
+    'github_button': True,
+    'github_type': 'star&v=2',  ## Use v2 button
+    'github_user': 'romanvm',
+    'github_repo': 'sphinx_tutorial',
+    'github_banner': True,
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
@@ -179,6 +187,7 @@ html_sidebars = {
         'searchbox.html',
     ]
 }
+
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
