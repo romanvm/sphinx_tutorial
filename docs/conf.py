@@ -205,7 +205,7 @@ html_sidebars = {
 # If true, links to the reST sources are added to the pages.
 
 ## I don't like links to page reST sources
-html_show_sourcelink = False
+html_show_sourcelink = True
 
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
 #html_show_sphinx = True
