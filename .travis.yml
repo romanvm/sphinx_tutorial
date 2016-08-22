@@ -1,0 +1,11 @@
+language: python
+python:
+  - "2.7"
+script: echo "Nothing to build here"
+before_deploy:
+  - pip install Sphinx
+  - wget https://raw.githubusercontent.com/romanvm/travis_scripts/master/publish_docs.py
+deploy:
+  - provider: script
+    script: python publish_docs.py
+    skip_cleanup: true
