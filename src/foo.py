@@ -34,7 +34,7 @@ def division(divident, divisor):
     :type divisor: float
     :return: division result
     :rtype: float
-    :raises: :class:`ZeroDivisionError` when divisor = 0
+    :raises ZeroDivisionError: when divisor = 0
 
     .. note:: This function can accept :class:`int` parameters too.
 
