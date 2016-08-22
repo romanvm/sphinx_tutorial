@@ -38,7 +38,7 @@ def division(divident, divisor):
 
     .. note:: This function can accept :class:`int` parameters too.
 
-    .. warning:: ``divisor=0`` will cause :class:`ZeroDivisionError` exception!
+    .. warning:: ``divisor=0`` will cause :exc:`ZeroDivisionError` exception!
 
     Example::
 
