@@ -108,3 +108,6 @@ target/
 
 venv/
 *.cmd
+.venv/
+docs/_autosummary/
+!docs/_autosummary/.notempty
