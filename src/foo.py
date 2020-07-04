@@ -11,15 +11,16 @@ Python objects
 
 import tkinter as tk
 import tkinter.ttk as ttk
+from typing import Union, Optional
 
 #: Pi constant
-PI = 3.141592654
-E = 2.718281828459  #: e constant
-example = PI * E
+PI: float = 3.141592654
+E: float = 2.718281828459  #: e constant
+example: float = PI * E
 """Another example of variable documentation"""
 
 
-def division(divident, divisor):
+def division(divident: Union[int, float], divisor: Union[int, float]) -> float:
     """
     Division function
 
@@ -29,9 +30,9 @@ def division(divident, divisor):
     or a module may raise under certain conditions.
 
     :param divident: operation divident
-    :type divident: float
+    :type divident: int, float
     :param divisor: operation divisor
-    :type divisor: float
+    :type divisor: int, float
     :return: division result
     :rtype: float
     :raises ZeroDivisionError: when divisor = 0
@@ -59,18 +60,18 @@ class Application(tk.Frame):
 
         app = Application()
     """
-    def __init__(self, master=None):
-        tk.Frame.__init__(self, master)
+    def __init__(self, master: Optional[tk.Tk] = None) -> None:
+        super().__init__(master)
         self.pack(padx=5, pady=5)
         self._create_widgets()
 
-    def _create_widgets(self):
+    def _create_widgets(self) -> None:
         self._label = ttk.Label(self, text='Hello World!', width=30, anchor='center')
         self._label.pack()
         self._quit_btn = ttk.Button(self, text='QUIT', command=root.destroy)
         self._quit_btn.pack()
 
-    def get_text(self):
+    def get_text(self) -> str:
         """
         Get label text
 
@@ -81,7 +82,7 @@ class Application(tk.Frame):
         """
         return self._label['text']
 
-    def set_text(self, value):
+    def set_text(self, value: str):
         """
         Set label text
 

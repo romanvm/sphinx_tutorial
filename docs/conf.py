@@ -325,4 +325,4 @@ texinfo_documents = [
 # Example configuration for intersphinx: refer to the Python standard library.
 ## Add Python version number to the default address to corretcly reference
 ## the Python standard library
-intersphinx_mapping = {'https://docs.python.org/3.5': None}
+intersphinx_mapping = {'https://docs.python.org/3.8': None}
